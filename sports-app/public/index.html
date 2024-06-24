@@ -24,7 +24,8 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Sports App</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +40,59 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <header>
+      <h1>Sports App</h1>
+      <nav>
+          <ul>
+              <li><a href="#upcoming-events">Upcoming Events</a></li>
+              <li><a href="#live-scores">Live Scores</a></li>
+              <li><a href="#player-stats">Player Stats</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+      <section id="upcoming-events">
+          <h2>Upcoming Events</h2>
+          <ul>
+              <li>Soccer: Team A vs Team B - June 25, 2024</li>
+              <li>Basketball: Team C vs Team D - June 26, 2024</li>
+              <li>Tennis: Player E vs Player F - June 27, 2024</li>
+          </ul>
+      </section>
+
+      <section id="live-scores">
+          <h2>Live Scores</h2>
+          <div class="score-card">
+              <h3>Soccer</h3>
+              <p>Team A 2 - 1 Team B</p>
+          </div>
+          <div class="score-card">
+              <h3>Basketball</h3>
+              <p>Team C 85 - 90 Team D</p>
+          </div>
+      </section>
+
+      <section id="player-stats">
+          <h2>Player Stats</h2>
+          <div class="player-card">
+              <h3>Player E</h3>
+              <p>Matches Played: 5</p>
+              <p>Goals: 4</p>
+          </div>
+          <div class="player-card">
+              <h3>Player F</h3>
+              <p>Matches Played: 6</p>
+              <p>Points: 120</p>
+          </div>
+      </section>
+  </main>
+
+  <footer>
+      <p>&copy; 2024 Sports App</p>
+  </footer>
+
+  <script src="script.js"></script>
   </body>
 </html>
